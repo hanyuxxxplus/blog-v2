@@ -1,7 +1,7 @@
 export default {
   dev: {
     '/api/': {
-      target: 'http://api.blog.test',
+      target: 'https://blog.ihanyv.com',
       changeOrigin: true,
     },
   },
