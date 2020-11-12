@@ -2,7 +2,7 @@ import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings'; // https://umijs.org/config/
 import proxy from './proxy';
 import routerData from './router.config';
-import webpackPlugin from './plugin.config';
+// import webpackPlugin from './plugin.config';
 
 const { REACT_APP_ENV } = process.env;
 const prod = process.env.NODE_ENV === 'production';
@@ -88,6 +88,6 @@ export default defineConfig({
     type: prod ? 'all' : 'none',
     exclude: [],
   },
-  chainWebpack: webpackPlugin,
+  // chainWebpack: webpackPlugin,
   devtool: !prod ? 'source-map' : false,
 });
